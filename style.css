@@ -7,7 +7,7 @@ body {
 
 /* Nagłówek */
 header {
-    background: #2b6777;
+    background: #492b77;
     color: white;
     padding: 15px;
     display: flex;
@@ -34,8 +34,9 @@ nav ul li a {
 
 /* Hero section */
 .hero {
-    background: url('images/hero.jpg') center/cover no-repeat;
-    height: 400px;
+    background: url('images/hero.png') center/cover no-repeat;
+    height: 500px; /* Mniejsza wysokość */
+    margin: -40px auto; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,7 +78,7 @@ nav ul li a {
 }
 
 footer {
-    background: #2b6777;
+    background: #492b77;
     color: white;
     text-align: center;
     padding: 15px;
