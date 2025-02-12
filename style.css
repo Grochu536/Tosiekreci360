@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Nagłówek */
+header {
+    background: #2b6777;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero section */
+.hero {
+    background: url('images/hero.jpg') center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-text {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.btn {
+    background: #52ab98;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/* Sekcje */
+.about, .services, .contact {
+    padding: 40px;
+    text-align: center;
+    background: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.service-box {
+    background: #ececec;
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+footer {
+    background: #2b6777;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}

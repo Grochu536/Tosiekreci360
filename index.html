@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabinet Dobre Miejsce - Psychoterapia</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Nagłówek strony -->
+    <header>
+        <div class="logo">💙 Gabinet Dobre Miejsce</div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="smooth-scroll">Strona Główna</a></li>
+                <li><a href="#about" class="smooth-scroll">O nas</a></li>
+                <li><a href="#services" class="smooth-scroll">Usługi</a></li>
+                <li><a href="#contact" class="smooth-scroll">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Główne zdjęcie i przycisk CTA -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Wsparcie i terapia w przyjaznym miejscu</h1>
+            <p>Oferujemy profesjonalną pomoc psychologiczną w bezpiecznej atmosferze.</p>
+            <a href="#contact" class="btn smooth-scroll">Umów wizytę</a>
+        </div>
+    </section>
+
+    <!-- Sekcja "O nas" -->
+    <section id="about" class="about">
+        <h2>Kim jesteśmy?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </section>
+
+    <!-- Sekcja "Usługi" -->
+    <section id="services" class="services">
+        <h2>Nasza oferta</h2>
+        <div class="service-box">
+            <h3>Psychoterapia indywidualna</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget tortor risus.</p>
+        </div>
+        <div class="service-box">
+            <h3>Terapia par</h3>
+            <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+        </div>
+        <div class="service-box">
+            <h3>Terapia rodzin</h3>
+            <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
+        </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="contact" class="contact">
+        <h2>Kontakt</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.</p>
+        <p>📞 +48 123 456 789</p>
+        <p>📧 kontakt@dobre-miejsce.pl</p>
+    </section>
+
+    <!-- Stopka -->
+    <footer>
+        <p>&copy; 2025 Gabinet Dobre Miejsce - Wszelkie prawa zastrzeżone</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.smooth-scroll').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
