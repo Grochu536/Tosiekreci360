@@ -5,9 +5,9 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Dodanie centralizacji i maksymalnej szerokości */
+/* Centralizacja i ograniczenie szerokości */
 section {
-    max-width: 1920px; /* Maksymalna szerokość strony */
+    max-width: 1200px; /* Zmniejszenie szerokości dla lepszego dopasowania */
     margin-left: auto;
     margin-right: auto;
     padding: 40px;
@@ -18,17 +18,24 @@ section {
 header {
     background: #492b77;
     color: white;
-    padding: 20px 40px;
+    padding: 15px 20px;
     display: flex;
-    justify-content: center; /* Wyśrodkowanie nagłówka */
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 30px; /* Zwiększenie odstępów */
+    gap: 20px;
     margin: 0;
+    padding: 0;
+}
+
+/* Stylizacja linków */
+nav ul li {
+    display: inline;
 }
 
 nav ul li a {
@@ -40,18 +47,19 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #52ab98; /* Efekt hover dla linków */
+    color: #52ab98;
 }
+
 /* Hero section */
 .hero {
     background: url('images/hero.png') center/cover no-repeat;
-    height: 500px; /* Mniejsza wysokość */
-    margin: -40px auto; 
+    height: 400px; /* Dopasowanie wysokości */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
+    padding: 20px;
 }
 
 .hero-text {
@@ -67,18 +75,20 @@ nav ul li a:hover {
     text-decoration: none;
     font-size: 16px;
     border-radius: 5px;
+    display: inline-block;
 }
 
 /* Sekcje */
 .about, .services, .contact {
-    padding: 40px;
+    padding: 30px;
     text-align: center;
     background: white;
-    margin: 20px;
+    margin: 15px;
     border-radius: 10px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Kafelkowe sekcje */
 .service-box {
     background: #ececec;
     padding: 20px;
@@ -87,10 +97,69 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
+/* Stopka */
 footer {
     background: #492b77;
     color: white;
     text-align: center;
     padding: 15px;
     margin-top: 40px;
+}
+
+/* RESPONSYWNOŚĆ */
+
+/* Dla ekranów do 768px (tablety i mniejsze) */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 10px;
+    }
+
+    .hero {
+        height: 300px; /* Mniejsza wysokość */
+    }
+
+    .hero-text {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .about, .services, .contact {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .service-box {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Dla ekranów do 480px (smartfony) */
+@media screen and (max-width: 480px) {
+    .hero {
+        height: 250px;
+    }
+
+    .hero-text {
+        font-size: 12px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
 }
